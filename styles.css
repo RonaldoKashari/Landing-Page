@@ -11,6 +11,9 @@
     padding: 1em 15em;
     background-color: #1f2937;
     color: #f9faf8;
+    box-shadow: 2px 13px 19px -10px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 2px 13px 19px -10px rgba(0,0,0,0.68);
+    -moz-box-shadow: 2px 13px 19px -10px rgba(0,0,0,0.68);
 }
 
 .headerTitle {
@@ -64,10 +67,11 @@
     color: white;
     padding: 8px 24px;
     border-radius: 8px;
+    border: none;
 }
 
-#S1KHero {
-    min-width: 600px
+ img{
+    max-width: 600px;
     height: auto;
 }
 
@@ -77,19 +81,87 @@
     align-items: center;
 }
 
-.infoCards, .card1, .card2, .card3, .card4{
-    gap: 20px;
+.infoCards{
+    gap: 80px;
     display: flex;
     align-items: center;
     text-align: center;
+    flex-grow: 1;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .card1, .card2, .card3, .card4{
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
-.infoCards, img{
+
+.infoCards img{
     width: 200px;
     height: auto;
+    border-radius: 12px;
+    border: 3px solid gray;
+    box-shadow: 1px 7px 39px -6px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 1px 7px 39px -6px rgba(0,0,0,0.51);
+    -moz-box-shadow: 1px 7px 39px -6px rgba(0,0,0,0.51);
 }
 
+#infoText{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 700;
+    padding: 50px;
+}
+
+.quoteSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 100px 300px;
+    bbox-shadow: 1px -6px 39px -6px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 1px -6px 39px -6px rgba(0,0,0,0.51);
+    -moz-box-shadow: 1px -6px 39px -6px rgba(0,0,0,0.51);
+}
+
+.quoteSection p{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.callToaction{
+    display: flex;
+    justify-content: center;
+    padding: 100px 200px;
+}
+.actionContainer{
+    border-radius: 12px;
+    color: white;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 100px;
+    box-shadow: 4px 12px 24px 0px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 4px 12px 24px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 12px 24px 0px rgba(0,0,0,0.51);
+}
+
+.actionContainer h4{
+    color: rgb(250, 250, 250);
+}
+
+.btnSignup2 {
+    width: 10em;
+    font-size: 16px;
+    background-color: #3882f6;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
