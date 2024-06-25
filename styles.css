@@ -1,59 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: "Roboto", sans-serif;
 }
 
-.header{
+.header {
     align-items: center;
     padding: 1em 15em;
     background-color: #1f2937;
     color: #f9faf8;
 }
 
-.headerTitle{
+.headerTitle {
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.rightLinks ul{
+.rightLinks ul {
     display: flex;
     list-style-type: none;
 }
 
-.rightLinks a{
+.rightLinks a {
     padding: 8px;
     color: #e5e7eb;
     text-decoration: none;
+    font-size: 24px;
 }
 
-.leftItems{
+.leftItems {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 30em;
-    gap: 8px;
+    gap: 16px;
 }
 
-.titleH1{
+.titleH1 {
     font-size: 48px;
     font-weight: 700;
     color: #f9faf8;
 }
 
-.heroP{
+.heroP {
     font-size: 18px;
     color: #e5e7eb;
 }
-.heroSection{
+
+.heroSection {
     display: flex;
     justify-content: space-between;
     gap: 3em;
+    margin-bottom: 2em;
 }
 
-.btnSignup{
+.btnSignup {
     width: 10em;
     font-size: 16px;
     background-color: #3882f6;
@@ -61,3 +65,31 @@
     padding: 8px 24px;
     border-radius: 8px;
 }
+
+#S1KHero {
+    min-width: 600px
+    height: auto;
+}
+
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoCards, .card1, .card2, .card3, .card4{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card1, .card2, .card3, .card4{
+    flex-direction: column;
+}
+
+.infoCards, img{
+    width: 200px;
+    height: auto;
+}
+
